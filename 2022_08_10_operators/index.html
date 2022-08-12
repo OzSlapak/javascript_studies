@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <input type="text" 10>
+
+    <input type="text" "10">
+     -->
+    <h1>operators</h1>
+
+    <script>
+
+        // Arithmetics operations
+        var a = 10
+        var b = 20
+        var myName = "John"
+        // console.log("adding", a + b) //30
+        // console.log("subtracting", a - b) //-10
+        // console.log("division", a / b) //0.5
+        // console.log("product", a * b) //200
+        // console.log("remainder", b % a) //0
+        var c = 90
+        c = c + 10 // c+=10
+        c = c - 10 //c-=10
+        c = c / 10 //c/=10
+        c = c * 10 //c*=10
+        // console.log("final result ", c)
+        // var a = 12
+        // var b = 5
+        // console.log("remainder", a % b)
+        // var x = 21
+        // var y = 4
+        // console.log("remainder", x % y)
+        // var r = 15
+        // var t = 9
+        // console.log("remainder", r % t)
+        // var u = 15
+        // var v = 2
+        // console.log("remainder", u % v)
+
+        //  COMPARISTON OPERATORS
+        var a = 17
+        var b = 90
+        var c = 17
+        var myBool = false
+        var myBool2 = true
+        // console.log("which is greater, 90 is greater", a < b) //true
+        // console.log("which is smaller, 17 is smaller", a < b) //true
+        // console.log(a > b) //false
+        // console.log(a >= b) //false
+        // console.log(a != b) //true
+        // console.log(a <= b) //true
+        // console.log(a <= c) //true
+        // console.log(a >= c) //true
+        // console.log(a != c) //false
+        myBool = !myBool
+        myBool = !myBool
+        // console.log(myBool) //false
+        // console.log(!myBool) //true
+        // console.log(myBool2 == myBool)//false
+        // console.log(myBool2 != myBool)//true
+
+        var fName = "Adem"
+        //TYPES SHOWN BELOW ARE ALL CONSIDERED AS STRING AND TRUE VALUES
+        // '0'
+        // 'false'
+        // 'null'
+        // "undefined"
+        //TYPES SHOWN BELOW ARE ALL CONSIDERED AS nothing  AND false VALUES
+        // 0
+        // false
+        // null
+        // undefined
+        // !true
+
+
+        var lName = "Koroglu"
+        var fullName = fName + "/" + lName
+        var a = 10
+        // console.log("55" - 0 + a)
+        // console.log(fullName)
+        var bool = true
+        // console.log(bool + 10)
+        // console.log(3 > 2 > 1) //false
+        // console.log(3 < 2 < 1) //true
+        // console.log((3 < 2) + 1) //1
+        // console.log((3 > 2) + 1) //2
+        // console.log("true" + 1) //2
+
+        // Compares base on value
+        // ==
+
+        // Comnpares based on value and type
+        // ===
+
+        // console.log(10 == "10")//true
+
+        // console.log(10 === "10") //false
+        // console.log(10 === 10)
+        var mynum1 = 10
+        var mynum2 = 20
+        mynum1 = mynum2 //20
+        mynum2 = mynum1 //20
+
+        // console.log(mynum1, mynum2)
+        var radius = 3
+        var pi = 3.14
+        var area = pi * radius ** 2
+
+        // PEDMAS
+        // console.log(area)
+        // console.log(3 + 6 / 3)
+
+        // BMI=weight/height^2 172:1.72
+        // var w = 80
+        // var h = 1.7
+        // bmi = w / h ** 2
+        // console.log(bmi.toFixed(2))
+        // var x = 50
+
+        // console.log(x == "50")//true
+        // console.log(x === "50")//false
+        // console.log(x === true)//false
+        // console.log(x === false)//false
+        // console.log(x > false)//true
+        // console.log(x < false)//false
+        // console.log(x != false)//true
+
+        //LOGICAL OPERATORS
+
+        var age1 = 20
+        var age2 = 25
+
+        // and >> && multiplication 
+        // or >> || addition
+        // console.log(age1 < age2 && age1 > 10) //1 true
+        // console.log(age1 < age2 && age1 < 10 && 5 > 1 && 90 == 90 && "hello" != "Hello") //0 false
+
+
+
+        // console.log(age1 < age2 || age1 > 10) //1 true
+        // console.log(age1 > age2 || age1 > 10 || 5 < 1 || 90 > 90 || "hello" === "Hello") //true
+
+        // console.log((5 > 1 && "true" != false && 0 > 10) || (5 < 1 || 9 > 5))
+        // console.log((5 > 1 && "true" != false && 0 > 10) && (5 < 1 || 9 > 5))
+
+        // short circuit logical operators
+        // console.log("" || 0 || undefined || "hello") //true, false
+        // console.log(false && true && true && "good evening") //true, false
+
+        // console.log("hi" ?? "hello")
+        // console.log(null ?? "hello")
+        // console.log("good evening" ?? undefined)
+        // console.log(undefined ?? "56")
+        // console.log("" || "56")
+
+        var a = 10
+        var b = 10
+        var c = 10
+
+        var s = (a + b + c) / 2
+
+
+        var A = Math.sqrt(s * (s - a) * (s - b) * (s - c))
+
+        // console.log("Area >>", A)
+
+        console.log(true + true + false)//2
+        console.log("bye" && "hi" && "Hello") //hello
+
+        console.log("10" || "hi" || "Hello") //10
+
+        console.log("bye" || 0 || undefined)//bye
+
+        console.log(('' && 5 < 0) || !undefined)//true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
