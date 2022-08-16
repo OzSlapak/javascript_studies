@@ -1,0 +1,43 @@
+// Declare the variable  + assign value to the variable 
+let name1 = 'John Doe';
+
+
+// Declare the variable 
+let name2; 
+// assign value to the variable;
+name = 'John Doe';
+name = 'Mike Smith'  //overwrite the value
+
+// const pi = 3.14;
+// pi = 3.15;       //can't overwrite the variable value;
+
+// const pi;          // const need to have a value during declaration
+// pi = 3.14;
+
+
+// let vs var
+
+// var a = 5;
+// {
+//   var a = 6;
+// }
+
+// console.log(a);
+
+// let a = 5;
+// {
+// 	//let a = 6;
+// 	console.log(a); //6
+// }
+
+//console.log(a);  //5
+
+
+// -- Hoisting --//
+
+// console.log(a);   //5
+// let a = 5;  // error
+// var a = 5   // undefined
+
+
+
