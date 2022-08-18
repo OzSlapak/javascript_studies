@@ -42,3 +42,20 @@
         // lenghtOfString("hey how is everything") :>> 35
         // lenghtOfString("hello") :>> 5
         // lenghtOfString("hi") :>> 2
+
+
+        function strLength(x) {
+            if (typeof x === "string") {
+
+                console.log("there are/is " + x.length + " char(s)")
+            } else {
+                console.log("invalid input type")
+            }
+        }
+        // strLength("hello how are you")
+        // strLength(150)
+        // strLength(null)
+        // strLength(undefined)
+        // strLength(NaN)
+        // strLength(["hello"])
+        // strLength({ id: "hi" })
