@@ -101,3 +101,115 @@
         // }else{
         //     console.log("string is not empty")
         // }
+
+
+        //write a function that takes two input parameters as strings, then display total lenght of them
+        //lenghtOfTwo("hey","hi") >>5
+        //lenghtOfTwo("hi","") >>2
+
+        function joinTwoString(str1, str2) {
+            if (typeof str1 === "string" || typeof str2 === "string") {
+                var joined = str1 + str2
+                console.log(joined.length)
+            } else {
+                console.log("invalid inputs")
+            }
+        }
+        // joinTwoString("hi", "hello")
+        // joinTwoString("hi", "")
+        // joinTwoString("", "hello")
+        // joinTwoString(10, "hello")
+        // joinTwoString(10, 55)
+        // joinTwoString("hi", 55)
+        function fToC(fahrenheit) {
+            var result = (5 / 9) * (fahrenheit - 32)
+            console.log(fahrenheit + " degrees " + result.toFixed(1) + " " + "Celcius")
+        }
+        // fToC(100)
+        // fToC(95)
+        // var sum = fToC(55) + fToC(95)
+        // console.log(sum, "<><<<<<<<<<<<<")
+
+
+
+        function simple() {
+
+            return 10 //terminates function operation prevents further line execution// makes function outcomes reusable
+        }
+        function simple2() {
+            return 20
+        }
+        // var result = simple()
+        // console.log(result + 200)
+        // console.log(simple() + simple2())
+        function evenOrOdd(num) {
+            if (num % 2 === 0) {
+                return "even"
+            }
+            return "odd"
+        }
+        var result = evenOrOdd(12)
+        // console.log(result)
+
+        // write a function that returns sum of numbers from 1 to N 
+        // mySum(5) >> 15
+        // mySum(10) >> 55
+        // mySum(9) >> 45
+        function addUpTo(n) {
+            var total = 0
+            for (let i = 1; i <= n; i++) {
+                total = total + i //total+=i
+            }
+            return total
+
+        }
+        // var sum = addUpTo(10)
+        // console.log(sum + 1000)
+
+        function addBetween(n, m) {
+            var total = 0
+            for (let i = n; i <= m; i++) {
+                total = total + i //total+=i
+            }
+            return total
+
+        }
+        var sum = addBetween(10, 12)
+        // console.log(sum)
+
+        // write a function that takes three strings asa parameter
+        // return average length of words
+
+        // averageLength("hi","hello","bye") >> 3.3
+        // averageLength("hi","hello"," bye!") >> 4
+        var salary = "87.450"
+        function averageLength(a, b, c) {
+            var name = "Esra"
+            var name2 = "Kadir"
+            // console.log(name, name2, salary, "inside of function")
+            return ((a + b + c).length / 3).toFixed(0)
+        }
+        var average = averageLength("hi", "hello", "bye")
+        // console.log(average)
+        // console.log(name, name2, "outiside of function")
+
+
+
+        //scoping
+        // global, window, local, block
+
+        //write a function to clean given string and return only characters joined
+        // cleanString("    h e  ll   o   !  ") >> "hello"
+        function cleanString(str) {
+            var cleaned = ''
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] != " " && str[i] != "!") {
+                    cleaned += str[i] //cleaned=cleaned+str[i]
+                }
+            }
+            return cleaned
+
+        }
+        var superClean = cleanString("    h e  ll   o   !  ")
+        console.log(superClean)
+
